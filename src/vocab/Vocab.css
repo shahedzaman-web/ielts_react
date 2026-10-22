@@ -1,0 +1,46 @@
+.vocab-root {
+    --bg: #0b1020;
+    --surface: #141a2e;
+    --surface2: #1c2340;
+    --border: #2a3358;
+    --text: #e8ecff;
+    --muted: #8891b8;
+    --accent: #7c8cff;
+    --accent2: #22d3ee;
+    --good: #22c55e;
+    --bad: #ef4444;
+    --warn: #f59e0b;
+    --purple: #a78bfa;
+
+    background:
+        radial-gradient(1000px 500px at 10% -10%, rgba(124, 140, 255, .15), transparent 60%),
+        radial-gradient(900px 500px at 110% 10%, rgba(34, 211, 238, .12), transparent 60%),
+        var(--bg);
+    color: var(--text);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', 'Noto Sans Bengali', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.vocab-root *,
+.vocab-root *::before,
+.vocab-root *::after {
+    box-sizing: border-box;
+}
+
+.vocab-root button,
+.vocab-root input,
+.vocab-root textarea,
+.vocab-root select {
+    font-family: inherit;
+    margin: 0;
+}
+
+.vocab-root button {
+    cursor: pointer;
+}
+
+/* paste the rest of your <style> block here, prefixing every selector with .vocab-root */
+/* E.g. .topbar becomes .vocab-root .topbar */
