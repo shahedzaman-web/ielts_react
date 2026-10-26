@@ -324,19 +324,7 @@ export function QuestionGroup({ group, ctx }) {
         <div className="q-group">
           {title}
           {group.heading && <h3>{group.heading}</h3>}
-          {instr}
-          <div className="optbox">
-            <b>{group.boxTitle || 'Options'}</b>
-            <div className="optgrid">
-              {group.options.map(o => (
-                <div key={o.value}>
-                  {o.label && o.label !== o.value
-                    ? <><strong>{o.value}</strong> {o.label}</>
-                    : <strong>{o.value}</strong>}
-                </div>
-              ))}
-            </div>
-          </div>
+          {instr} 
           <div style={{ overflowX: 'auto' }}>
             <table>
               <thead>
@@ -401,10 +389,10 @@ export function QuestionGroup({ group, ctx }) {
           </div>
           <div className="summary-box">
             {group.items.map(it => {
-              const ok = ctx.graded ? ctx.isCorrect(it.q) : null;
+              const ok = ctx.graded ? ctx.isCorrect(it.q) : null; 
               return (
                 <span key={it.q}>
-                  {it.before}
+                  {it.before}  asdsdas
                   <span className="q">
                     <span className="num">{it.q}</span>
                     <select
